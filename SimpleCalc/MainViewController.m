@@ -28,15 +28,13 @@
         [_mainCalcView.otherButtons[i] addTarget:self action:@selector(mathOperation:) forControlEvents:UIControlEventTouchUpInside];
     }
     
-    @try {
+    //@try {
         [_mainCalcView.actionEqual addTarget:self action:@selector(equalOperation) forControlEvents:UIControlEventTouchUpInside];
-    }
-    @catch (NSException *exception) {
-        _mainCalcView.infoTextField.text = @"E";
-        _mainCalcView.mainTextField.text = @"0";
-    }
-    
-    
+    //}
+    //@catch (NSException *exception) {
+      //  _mainCalcView.infoTextField.text = @"E";
+      //  _mainCalcView.mainTextField.text = @"0";
+    //}
 }
 
 - (void)mathOperation:(UIButton *)sender {
@@ -101,7 +99,5 @@
     _mathOperator = @"";
     _mainCalcView.infoTextField.text = @"";
 }
-
-
 
 @end
