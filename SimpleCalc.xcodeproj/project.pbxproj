@@ -19,6 +19,9 @@
 		849FAB56194D936200175D5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849FAB3E194D936200175D5C /* UIKit.framework */; };
 		849FAB5E194D936200175D5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 849FAB5C194D936200175D5C /* InfoPlist.strings */; };
 		849FAB60194D936200175D5C /* SimpleCalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FAB5F194D936200175D5C /* SimpleCalcTests.m */; };
+		849FAB6B194D940700175D5C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FAB6A194D940700175D5C /* MainViewController.m */; };
+		849FAB6E194D943600175D5C /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FAB6D194D943600175D5C /* MainView.m */; };
+		849FAB71194DED1100175D5C /* DividingByZero.m in Sources */ = {isa = PBXBuildFile; fileRef = 849FAB70194DED1100175D5C /* DividingByZero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		849FAB5B194D936200175D5C /* SimpleCalcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleCalcTests-Info.plist"; sourceTree = "<group>"; };
 		849FAB5D194D936200175D5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		849FAB5F194D936200175D5C /* SimpleCalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleCalcTests.m; sourceTree = "<group>"; };
+		849FAB69194D940700175D5C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		849FAB6A194D940700175D5C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		849FAB6C194D943600175D5C /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		849FAB6D194D943600175D5C /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		849FAB6F194DED1100175D5C /* DividingByZero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DividingByZero.h; sourceTree = "<group>"; };
+		849FAB70194DED1100175D5C /* DividingByZero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DividingByZero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,8 +118,14 @@
 			children = (
 				849FAB49194D936200175D5C /* AppDelegate.h */,
 				849FAB4A194D936200175D5C /* AppDelegate.m */,
+				849FAB69194D940700175D5C /* MainViewController.h */,
+				849FAB6A194D940700175D5C /* MainViewController.m */,
+				849FAB6C194D943600175D5C /* MainView.h */,
+				849FAB6D194D943600175D5C /* MainView.m */,
 				849FAB4C194D936200175D5C /* Images.xcassets */,
 				849FAB41194D936200175D5C /* Supporting Files */,
+				849FAB6F194DED1100175D5C /* DividingByZero.h */,
+				849FAB70194DED1100175D5C /* DividingByZero.m */,
 			);
 			path = SimpleCalc;
 			sourceTree = "<group>";
@@ -239,7 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849FAB71194DED1100175D5C /* DividingByZero.m in Sources */,
 				849FAB4B194D936200175D5C /* AppDelegate.m in Sources */,
+				849FAB6E194D943600175D5C /* MainView.m in Sources */,
+				849FAB6B194D940700175D5C /* MainViewController.m in Sources */,
 				849FAB47194D936200175D5C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
