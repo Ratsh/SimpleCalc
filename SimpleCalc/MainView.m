@@ -32,6 +32,7 @@
 }
 
 - (void)layoutSubviews {
+    [super layoutSubviews];
     [self subviewsFramesWithFirstX:20 FirstY:30 DistanceBetween:24 AndButtonSize:52];
 }
 
@@ -63,8 +64,10 @@
     [_digitButtons[0] setFrame:CGRectMake(currentX, currentY, buttonSize, buttonSize)];
     currentX += buttonSize + distanceBetween;
     [_otherButtons[5] setFrame:CGRectMake(currentX, currentY, buttonSize, buttonSize)];
+    
     currentX += buttonSize + distanceBetween;
     [_otherButtons[4] setFrame:CGRectMake(currentX, currentY, buttonSize, buttonSize)];
+    ((UIButton *)_otherButtons[4]).contentEdgeInsets = UIEdgeInsetsMake(0, 3, 6, 0);
     currentX = firstX + 3 * buttonSize + 3 * distanceBetween;
     currentY = firstY + buttonSize + distanceBetween;
     
@@ -81,6 +84,7 @@
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [button setTitleColor:[UIColor yellowColor] forState:UIControlStateSelected];
     [button setTitle:[NSString stringWithFormat:@"%i", value] forState:UIControlStateNormal];
+    button.contentEdgeInsets = UIEdgeInsetsMake(0, 2.25, 2, 0);
 }
 
 - (void)initButton:(UIButton*)button WithTitle:(NSString*)title {
@@ -134,12 +138,19 @@
     
     [self initButton:_mathOperationSum      WithTitle:@"+"];
     [_mathOperationSum.titleLabel setFont:[UIFont boldSystemFontOfSize:32]];
+    _mathOperationSum.contentEdgeInsets = UIEdgeInsetsMake(0, 3, 6, 0);
+    
     [self initButton:_mathOperationDiff     WithTitle:@"-"];
     [_mathOperationDiff.titleLabel setFont:[UIFont boldSystemFontOfSize:32]];
+    _mathOperationDiff.contentEdgeInsets = UIEdgeInsetsMake(0, 3, 5, 0);
+    
     [self initButton:_mathOperationMultiple WithTitle:@"x"];
     [_mathOperationMultiple.titleLabel setFont:[UIFont boldSystemFontOfSize:32]];
+    _mathOperationMultiple.contentEdgeInsets = UIEdgeInsetsMake(0, 3, 6, 0);
+    
     [self initButton:_mathOperationDivide   WithTitle:@"/"];
     [_mathOperationDivide.titleLabel setFont:[UIFont boldSystemFontOfSize:32]];
+    _mathOperationDivide.contentEdgeInsets = UIEdgeInsetsMake(0, 3, 1, 0);
     
     [self initButton:_actionEqual WithTitle:@" = "];
     [_actionEqual.titleLabel setFont:[UIFont boldSystemFontOfSize:42]];

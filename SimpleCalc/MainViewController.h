@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "MainView.h"
-#import "DividingByZero.h"
 
 @interface MainViewController : UIViewController
 

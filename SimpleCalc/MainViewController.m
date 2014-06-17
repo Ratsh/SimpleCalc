@@ -27,14 +27,7 @@
     for (int i = 0; i < 4; i++) {
         [_mainCalcView.otherButtons[i] addTarget:self action:@selector(mathOperation:) forControlEvents:UIControlEventTouchUpInside];
     }
-    
-    //@try {
         [_mainCalcView.actionEqual addTarget:self action:@selector(equalOperation) forControlEvents:UIControlEventTouchUpInside];
-    //}
-    //@catch (NSException *exception) {
-      //  _mainCalcView.infoTextField.text = @"E";
-      //  _mainCalcView.mainTextField.text = @"0";
-    //}
 }
 
 - (void)mathOperation:(UIButton *)sender {
@@ -61,7 +54,6 @@
             result = _firstNumber * _secondNumber;
         } else if ([_mathOperator isEqual:@"/"]) {
             if (_secondNumber == 0) {
-                //@throw [DividingByZero new];
                 result = 0;
                 _mainCalcView.infoTextField.text = @"E";
             } else {
